@@ -192,3 +192,53 @@ li.active a{
 .logout a {
 	color:#6a707e;
 }
+
+/*
+========================
+	Top bar Section
+=========================
+*/
+.topbar{
+	background-color: #fff;
+	padding: 15px 0px 15px 0px;
+}
+.search {
+    position: relative;
+    padding: 5px 10px 10px 35px;
+    background-color: #F3F3F3;
+}
+.searchicon {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+}
+.right_top{
+	float: right;
+}
+.notification {
+    float:  left;
+    margin: 9px 2px 5px 0px;
+    display:  inline-block;
+}
+.notification i {
+    margin: 0px 11px 0 0px;
+}
+.profile {
+    display:  inline-block;
+}
+
+.avatar {
+    float:  left;
+    display:  inline-block;
+}
+.avatar img {
+    width: 72%;
+}
+.username {
+    float: left;
+    margin: 7px 10px 0px 0px;
+}
+.bars {
+    float:  right;
+    margin: 7px 15px 0px 5px;
+}
