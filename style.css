@@ -14,8 +14,8 @@
  *
  * 01. Base Styles
  * 02. Sidebar Css
- * 03. Navigation
- * 04. Footer Styles
+ * 03. Topbar
+ * 04. Main body area
  * 05. Responsive Styles
  *
 
@@ -156,10 +156,12 @@ p {
 }
 .navigation_items ul li:hover{
 	background-color: #F2EFFE;
+	border-left: 3px solid #7f63f4;
 }
 .navigation_items ul li:hover a{
 	color:#7f63f4 !important;
 }
+
 .navigation_items ul li a {
     padding: 10px 0px;
     display: block;
@@ -175,6 +177,7 @@ p {
 }
 li.active{
 	background-color: #F2EFFE;
+	border-left: 3px solid #7f63f4;
 }
 li.active a{
 	color:#7f63f4 !important;
@@ -206,6 +209,7 @@ li.active a{
     position: relative;
     padding: 5px 10px 10px 35px;
     background-color: #F3F3F3;
+    border: 0;
 }
 .searchicon {
     position: absolute;
@@ -241,4 +245,269 @@ li.active a{
 .bars {
     float:  right;
     margin: 7px 15px 0px 5px;
+}
+.saz_dropdown ul{
+	margin: 0;
+	padding: 0;
+}
+.saz_dropdown ul li {
+	list-style: none;
+	margin-right: 10px;
+}
+.saz_dropdown ul li a{
+	margin-left: 10px;
+	font-size: 12px;
+}
+.uname{
+	cursor: pointer;
+}
+.breadcum {
+    background-color: #F2EFFE;
+    padding: 15px 15px 0px 15px;
+    display: block;
+    overflow: hidden;
+}
+.pagetitle{
+	display: inline-block;
+	float: left;
+}
+.pagetitle h2 {
+	color:#7f63f4;
+}
+.pages_right{
+	display: inline-block;
+	float: right;
+}
+.breadcum_active{
+	color:#7f63f4;
+}
+
+/*
+===================
+	Main Body 
+===================
+*/
+
+.boxarea{
+	background-color: #fff;
+	margin-top: 25px;
+	padding:25px 0px 25px 0px;
+	box-shadow: 4px 0px 20px 0px #b1b1b126;
+}
+.boxarea ul{
+	margin: 0;
+	padding: 0;
+}
+.boxarea ul li{
+	list-style: none;
+}
+.boxarea ul li:hover{
+	border-left: 3px solid #7f63f4;
+}
+.boxarea ul li:hover a{
+	color:#7f63f4 !important;
+}
+.boxarea ul li a{
+	padding: 10px 0px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform:translateX(25px);
+}
+.boxarea ul li.active{
+	background-color: transparent;
+}
+.boxarea ul li a i {
+	margin-right: 10px;
+}
+span.count {
+    float: right;
+    padding: 2px 5px;
+    background-color: #218DFA;
+    color: #fff;
+    border-radius: 4px;
+    transform: translateY(9px);
+    margin-right: 10px;
+}
+.category {
+    background-color: #F2EFFE;
+    padding: 10px;
+}
+#cat_acro{
+	cursor: pointer;
+}
+.cat_left{
+	display: inline-block;
+}
+.cat_left h3 {
+	color: #6a707e;
+}
+.icon {
+    float:  right;
+}
+.orange{
+	color:#FF9800;
+}
+.purple{
+	color:#673AB7;
+}
+.green{
+	color:#13B18B;
+}
+.sky{
+	color:#03A6EF;
+}
+img.onlineuserimage {
+    display:  inline-block;
+    float:  left;
+}
+
+span.info {
+    float:  right;
+    margin-left: 15px;
+}
+
+span.info p {
+    font-weight: 600;
+    margin:  0;
+}
+
+span.info span {
+    font-size:  12px;
+}
+.compose {
+    background-color: #7F63F4;
+    padding: 15px;
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+.compose h3 {
+	margin:0;
+	text-align: center;
+	color:#fff;
+}
+
+.inboxmsg{
+	border: 1px solid #E7E7F8;
+	margin-top: 25px;
+}
+
+/*
+=======================
+	Mail Inbox
+=======================
+*/
+.search_mail {
+    position: relative;
+    padding: 5px 10px 10px 35px;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    max-width: 200px;
+    width: 100%;
+    font-size: 12px;
+    transform: translateY(4px);
+    display: inline-block;
+}
+.mailsearch {
+    display:  inline-block;
+}
+.mailsearchicon {
+    position: absolute;
+    top: 37px;
+    left: 24px;
+}
+.mail_account {
+    max-width: 150px;
+    width: 100%;
+    float: right;
+    margin-top: 8px;
+}
+.mail_control {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    font-size: 11px;
+    color: #6a707e;
+    font-weight: bold;
+}
+.new_control {
+    background-color: transparent;
+    border:0;
+    border-radius: 0;
+    font-size: 11px;
+    color: #6a707e;
+    font-weight: bold;
+}
+.inboxmsg{
+	padding:0 15px 0 15px;
+}
+.mail_filter_area ul{
+	margin: 0;
+	padding: 0;
+}
+.mail_filter_area ul li{
+	list-style: none;
+	float: left;
+}
+.mail_filter_area ul li a {
+    display: block;
+    padding: 20px 7px;
+    font-size: 12px;
+    color:#dddddd;
+}
+.mailactive a{
+	font-weight: bold;
+	color: #6a707e !important;
+}
+.mail_filter_area{
+	max-width: 200px;
+	width: 100%;
+	margin-top: 6px;
+}
+.sortdate {
+    max-width: 87px;
+    width: 100%;
+    display: inline-block;
+    margin-left: 12px;
+}
+.Newest {
+    max-width: 97px;
+    width: 100%;
+    display: inline-block;
+}
+select.form-control:not([size]):not([multiple]){
+    height: auto !important;
+}
+.mail_line{
+	height: 1px;
+	background-color: #e7e7f8;
+	width: 100%;
+}
+
+
+.mail_area{
+	border-bottom: 1px solid #E7E7F8;
+	border-right: 1px solid #E7E7F8;
+}
+.mail_waper{
+	padding:15px;
+}
+/*
+===================
+	Copy
+===================
+*/
+.copy {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
 }
