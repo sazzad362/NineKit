@@ -16,6 +16,7 @@
  * 02. Sidebar Css
  * 03. Topbar
  * 04. Main body area
+ * 04. Footer area
  * 05. Responsive Styles
  *
 
@@ -68,44 +69,49 @@ p {
     font-weight: 400;
 }
 /*
-	===================
-	Padding Class
-	===================
+	==============================
+	Padding Class for desktop only 
+	==============================
 */
-.p0 {
-  padding: 0;
-}
+@media (min-width: 1350px) {
+	.p0 {
+	  padding: 0;
+	}
 
-.pr-0 {
-  padding-right: 0;
-}
+	.pr-0 {
+	  padding-right: 0;
+	}
 
-.pl-0 {
-  padding-left: 0;
-}
+	.pl-0 {
+	  padding-left: 0;
+	}
 
-.pt-0 {
-  padding-top: 0;
+	.pt-0 {
+	  padding-top: 0;
+	}
 }
 /*
-	===================
-	Margin Class
-	===================
+	================================
+	Margin Class for desktop only 
+	================================
 */
-.m0 {
-  margin: 0;
-}
 
-.mr-0 {
-  margin-right: 0;
-}
+@media (min-width: 1350px) {
+	.m0 {
+	  margin: 0;
+	}
 
-.ml-0 {
-  margin-left: 0;
-}
+	.mr-0 {
+	  margin-right: 0;
+	}
 
-.mt-0 {
-  margin-top: 0;
+	.ml-0 {
+	  margin-left: 0;
+	}
+
+	.mt-0 {
+	  margin-top: 0;
+	}
 }
 
 /*
@@ -450,10 +456,14 @@ span.info span {
 .inboxmsg{
 	padding:0 15px 0 15px;
 }
+.filter_bottom {
+    position: relative;
+}
 .mail_filter_area ul{
 	margin: 0;
 	padding: 0;
 }
+
 .mail_filter_area ul li{
 	list-style: none;
 	float: left;
@@ -469,9 +479,8 @@ span.info span {
 	color: #6a707e !important;
 }
 .mail_filter_area{
-	max-width: 200px;
-	width: 100%;
 	margin-top: 6px;
+	display: inline-block;
 }
 .sortdate {
     max-width: 87px;
@@ -499,7 +508,179 @@ select.form-control:not([size]):not([multiple]){
 	border-right: 1px solid #E7E7F8;
 }
 .mail_waper{
-	padding:15px;
+	padding:15px 15px 0px 15px;
+}
+.mail_av {
+    display:  inline-block;
+    float:  left;
+    margin-right: 15px;
+}
+
+.inbox_pre_data p {
+    margin-right:  15px;
+    margin:  0;
+}
+
+.inbox_pre_data span {
+    float: right;
+    margin-top: -20px;
+}
+
+.inbox_pre_title {
+    display:  inline-block;
+    clear:  both;
+}
+
+.inbox_pre_title h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #6a707e;
+    margin-top: 13px;
+    display: inline-block;
+}
+.relative_class {
+    position: relative;
+}
+.inbox_pre_title i {
+    position: absolute;
+    right: 0;
+    top: 13px;
+}
+.inbox_details {
+    margin-left: 72px;
+    line-height: 28px;
+    padding-bottom: 1px;
+}
+
+.inbox_details p {
+    color: #abafb3;
+}
+.inbox_active {
+    background-color: #7F63F4;
+    color: #fff;
+}
+.inbox_active > .inbox_details p {
+    color:#fff;
+}
+.inbox_active > .relative_class > .inbox_pre_title h3{
+	color:#fff;
+}
+.user_head{
+	padding:26px 0 26px 0;
+}
+.mail_user_avatar {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+.mail_user_info p {
+    margin: 0 0 5px 0;
+    color:  #7f63f4;
+    font-weight: 700;
+}
+
+.mail_user_info span {
+    font-size:  12px;
+    font-weight: bold;
+}
+.icon_menu_mail ul{
+	margin: 0;
+	padding: 0;
+}
+.icon_menu_mail ul li{
+	list-style: none;
+	float: left;
+}
+.icon_menu_mail ul li a{
+	display: block;
+	padding:0 10px;
+}
+.icon_menu_mail {
+    right: 14px;
+    position:  absolute;
+    top: 70px;
+}
+
+.mail_user_left {
+    position:  relative;
+}
+.mail_body{
+	padding:0 15px;
+	margin-top: 25px;
+}
+.attachment_title p {
+	margin: 0;
+}
+.attachment{
+	padding:25px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin-top: 25px;
+	color: #abafb3;
+}
+.mail_details_text p {
+    color: #abafb3;
+    line-height: 31px;
+}
+.mail_body_title h3 {
+    display:  inline-block;
+    color: #7f63f4;
+}
+
+.mail_body_title span {
+    float: right;
+}
+
+.mail_to p {}
+
+.mail_to p {
+    color: #abafb3;
+}
+
+.mail_to p {
+    color: #abafb3;
+}
+
+.mail_details_text {
+    margin: 25px 0px;
+}
+.mail_details_text span{
+	font-weight: 600;
+	color:#6a707e;
+}
+.attachment_title{
+	position: relative;
+}
+.attachment_title h3 {
+    color: #727885;
+}
+.download {
+    position: absolute;
+    right: 27px;
+    top: 40%;
+}
+.message_area textarea {
+    width:  100%;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    background:  transparent;
+    padding: 15px;
+}
+.send_msg{
+	background-color: #7F63F4;
+    padding: 15px;
+    max-width: 150px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 3px;
+    float: right;
+    text-align: center;
+    clear:both;
+}
+
+.send_msg a {
+	color:#fff;
+	text-align: center;
 }
 /*
 ===================
@@ -510,4 +691,38 @@ select.form-control:not([size]):not([multiple]){
     background-color: #fff;
     padding: 15px;
     text-align: center;
+}
+.copy a {
+	color: #7F63F4;
+}	
+
+/*
+===============================
+ Some Responsive fix
+===============================
+*/
+
+@media (min-width: 981px) {
+	.filter_right {
+    position: absolute;
+    right: 0;
+    top: 21px;
+    width: 59%;
+	}
+}
+@media (min-width: 1350px) {
+	.filter_right {
+    position: absolute;
+    right: 0;
+    top: 21px;
+    width: 55%;
+	}
+}
+@media (min-width: 1800px) {
+	.filter_right {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 30%;
+}
 }
