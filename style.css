@@ -17,6 +17,7 @@
  * 03. Topbar
  * 04. Main body area
  * 04. Footer area
+ * 04. Mobile Top Bar
  * 05. Responsive Styles
  *
 
@@ -698,6 +699,29 @@ select.form-control:not([size]):not([multiple]){
 }	
 
 /*
+=====================
+	Mobile top bar
+=====================
+*/
+.mobile_top{
+	background-color: #7F63F4;
+	display: none;
+}
+.menu_mb i {
+    color:  #fff;
+    cursor: pointer;
+}
+
+.logo_mobile {
+    display:  inline-block;
+}
+
+.menu_mb {
+    display:  inline-block;
+    float:  right;
+    margin: 25px 25px 0px 0px;
+}
+/*
 ===============================
  Some Responsive fix
 ===============================
@@ -725,5 +749,22 @@ select.form-control:not([size]):not([multiple]){
     right: 0;
     top: 22px;
     width: 30%;
+}
+}
+
+@media screen and (max-width: 767px){
+	.mobile_top{
+		display: block;
+	}
+	.menu{
+		display: none;
+	}
+	.right_top {
+    float: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.logo_area {
+    display: none;
 }
 }
